@@ -1,0 +1,38 @@
+.feed-item {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 7px 3px #ccc;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+
+  .feed-item-link {
+    text-decoration: none;
+    font-size: 40px;
+    margin-top: 10px;
+    text-align: center;
+
+    //align-self: flex-start;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .feed-item-date {
+    align-self: flex-start;
+    margin-left: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .feed-item-description {
+    align-self: flex-start;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,47 @@
+.keyword-item {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin: 5px 0;
+
+  & > img {
+    width: 20px;
+    height: 20px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
+  & > input {
+    height: 100%;
+    width: 250px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    padding: 0 8px;
+    margin: 0 5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & > button {
+    height: 90%;
+    width: 70px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    background-color: #2f9d95;
+    color: white;
+    border-radius: 8px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}
