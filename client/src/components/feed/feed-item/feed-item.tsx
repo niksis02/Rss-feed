@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { format } from "timeago.js";
 import { IFeedItem } from "../../../pages/home/home";
 import "./feed-item.scss";
@@ -12,9 +11,9 @@ const FeedItem: React.FC<IProps> = ({
 }) => {
   return (
     <div className="feed-item">
-      <Link className="feed-item-link" to={link}>
+      <a className="feed-item-link" href={link}>
         {title}
-      </Link>
+      </a>
       <span className="feed-item-date">{format(pubDate)}</span>
       <article className="feed-item-description">{description}</article>
     </div>
